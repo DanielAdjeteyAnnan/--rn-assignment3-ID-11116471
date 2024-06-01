@@ -1,6 +1,6 @@
-import React from 'react';
+ import React from 'react';
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, TextInput, Image } from 'react-native';
+import { StyleSheet, Text, View, TextInput, Image, ScrollView  } from 'react-native';
 
 export default function App() {
   return (
@@ -20,9 +20,38 @@ export default function App() {
           <Image source={require('./assets/image/pictureNav.png')} style={styles.pictureNav} />
         </View>
       </View>
+      <Text style={styles.Textcat}>Categories</Text>
 
-      <View style={styles.textContainer}>
-        <Text style={styles.searchText}></Text>
+      
+      <View style={styles.scrollList}>
+        <ScrollView horizontal style={styles.categoryScrollBox} showsHorizontalScrollIndicator={false}>
+          <View style={styles.cat}>
+            <Text style={styles.subtxt}>Exercise</Text>
+            <Text style={styles.tsmall}>12 Tasks</Text>
+            <Image
+              style={styles.imageBox} 
+              source={require("./assets/image/exercise.png")}
+            />
+          </View>
+
+          <View style={styles.cat}>
+            <Text style={styles.subtxt}>Study</Text>
+            <Text style={styles.tsmall}>12 Tasks</Text>
+            <Image
+              style={styles.imageBox} 
+              source={require("./assets/image/study.png")}
+            />
+          </View>
+
+          <View style={styles.cat}>
+            <Text style={styles.subtxt}>Shopping</Text>
+            <Text style={styles.tsmall}>3 hours</Text>
+            <Image
+              style={styles.imageBox} 
+              source={require("./assets/image/exercise.png")}
+            /> 
+          </View>
+        </ScrollView>
       </View>
       
       <StatusBar style="auto" />
@@ -83,13 +112,6 @@ const styles = StyleSheet.create({
     borderRadius: 20,
     backgroundColor: '#fff',
   },
-  /*
-  textContainer: {
-    position: 'absolute',
-    left: 20,
-    top: 184,
-  },
-  */
   searchText: {
     fontSize: 14,
     color: '#999',
@@ -97,11 +119,46 @@ const styles = StyleSheet.create({
   pictureButton: {
     justifyContent: 'center',
     alignItems: 'center',
-   
   },
   pictureNav: {
     width: 50,
     height: 48,
     borderRadius: 24,
+  },
+  Textcat: {
+    fontSize: 20,
+    top: 45,
+    left: 20,
+    fontWeight: "bold"
+  },
+  scrollList: {
+    left: 10,
+    top: 60,
+    flexDirection: "row",
+    gap: 20,
+  },
+  cat: {
+    backgroundColor: "#FBF9F7",
+    width: 186,
+    height: 200,
+    borderRadius: 20,
+    paddingLeft: 10,
+    marginHorizontal: 10,
+  },
+  tsmall: {
+    fontSize: 12,
+    fontWeight: "450",
+    marginTop: 5,
+  },
+  subtxt: {
+    fontSize: 16,
+    fontWeight: "bold", 
+    marginTop: 10,
+  },
+  imageBox:{
+    width: 145,
+    height: 150,
+    borderRadius: 15,
+    top: 10
   },
 });
