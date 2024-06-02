@@ -1,7 +1,7 @@
-# --rn-assignment3-ID-11116471
+# -rn-assignment3-ID-11116471
 Assignment 3 DCIT-202
 
-The following points briefly explain the use of the core components used in my project.
+The following points briefly explain the use of the components used in my project.
 
 These are:
 ### App
@@ -31,8 +31,6 @@ Greets you with a welcome message and shows the number of tasks for the day.
 - **Text**: Shows "Hello, Devs" and "14 tasks today".
 
 THIS IS THE SCREENSHOT OF MY PROJECT
-
-![App Screenshot](./assets/image/screenshot.png)
-
+ ![App Screenshot](App-Project-II/assets/image/screenshot/app-screenshot.png)
 
  
