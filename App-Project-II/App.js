@@ -39,9 +39,39 @@ export default function App() {
             </View>
 
             <View style={styles.cat}>
-              <Text style={styles.subtxt}>Shopping</Text>
-              <Text style={styles.tsmall}>3 hours</Text>
-              <Image style={styles.imageBox} source={require("./assets/image/exercise.png")} />
+              <Text style={styles.subtxt}>Coding</Text>
+              <Text style={styles.tsmall}>4 hours</Text>
+              <Image style={styles.imageBox} source={require("./assets/image/code.png")} />
+            </View>
+
+            <View style={styles.cat}>
+              <Text style={styles.subtxt}>Cook</Text>
+              <Text style={styles.tsmall}>3 Tasks</Text>
+              <Image style={styles.imageBox} source={require("./assets/image/cook.png")} />
+            </View>
+
+            <View style={styles.cat}>
+              <Text style={styles.subtxt}>Dance</Text>
+              <Text style={styles.tsmall}>2 hours</Text>
+              <Image style={styles.imageBox} source={require("./assets/image/dance.png")} />
+            </View>
+
+            <View style={styles.cat}>
+              <Text style={styles.subtxt}>Relax</Text>
+              <Text style={styles.tsmall}>3 Weeks</Text>
+              <Image style={styles.imageBox} source={require("./assets/image/relax.png")} />
+            </View>
+
+            <View style={styles.cat}>
+              <Text style={styles.subtxt}>Travel</Text>
+              <Text style={styles.tsmall}>6 Tasks</Text>
+              <Image style={styles.imageBox} source={require("./assets/image/travel.png")} />
+            </View>
+
+            <View style={styles.cat}>
+              <Text style={styles.subtxt}>Work</Text>
+              <Text style={styles.tsmall}>6 hours</Text>
+              <Image style={styles.imageBox} source={require("./assets/image/work.png")} />
             </View>
           </ScrollView>
         </View>
